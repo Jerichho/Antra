@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  color: #333;
+}
+
+.signup-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#mainTitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.terms-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.terms-wrap label {
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.info-text {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  width: fit-content;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.terms-wrap a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.terms-wrap a:hover {
+  text-decoration: underline;
+}
+
+#register {
+  background-color: #337ab7; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signin {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-row button {
+  min-width: 120px;
+}
+
+.button-style {
+  background-color: #337ab7;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-row button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .terms-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
